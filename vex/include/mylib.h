@@ -9,7 +9,7 @@
 // Returns true(1) if the middle point (b) is a peak - i.e. if it is
 // higher on the X axis than the other two points.
 int curve_peak_x(vector2 a; vector2 b; vector2 c) {
-    return a.x < b.y && c.x < b.x;
+    return a.x < b.x && c.x < b.x;
 }
 
 // Returns true(1) if the middle point (b) is a peak - i.e. if it is
@@ -50,6 +50,11 @@ vector curve_point_normal(int ptnum; vector P) {
         }
     }
     return normalize(N);
+}
+
+// Generic peak function. Use a.x, b.x, c.x or y or z coordinates as input parameters.
+int curve_peak(float a; float b; float c) {
+    return a < b && c < b;
 }
 
 // Calculates and returns the angle (in radians) of the edges of a point on a curve.
