@@ -30,6 +30,11 @@ int curve_peak_z(vector2 a; vector2 b; vector2 c) {
     return a.z < b.z && c.z < b.z;
 }
 
+// Generic peak function. Use a.x, b.x, c.x or y or z coordinates as input parameters.
+int curve_peak(float a; float b; float c) {
+    return a < b && c < b;
+}
+
 // Calculates and returns normal vector for a given point on a curve.
 // Inputs are the point number (@ptnum) and the point (@P).
 // The return value can be assigned to @N.
@@ -57,11 +62,6 @@ vector curve_point_normal(int ptnum; vector P) {
         }
     }
     return normalize(N);
-}
-
-// Generic peak function. Use a.x, b.x, c.x or y or z coordinates as input parameters.
-int curve_peak(float a; float b; float c) {
-    return a < b && c < b;
 }
 
 // Calculates and returns the angle (in radians) of the edges of a point on a curve.
