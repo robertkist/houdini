@@ -9,7 +9,7 @@ Mac / Linux: Edit your houdini.env file and add:
 
 Windows: Edit your houdini.env file and add:
 
-```HOUDINI_VEX_PATH = HOUDINI_VEX_PATH = D:/<path>/houdini_hda/vex/^;&```
+```HOUDINI_VEX_PATH = D:/<path>/houdini_hda/vex/^;&```
 
 Where houdini_hda is this repository and path the location where it resides.
 
