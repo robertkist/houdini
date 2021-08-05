@@ -1,5 +1,14 @@
 # Various Houdini HDAs and VEX snippets
 
+About
+-----
+
+My personal (and still growing) collection of reusable Houdini components.
+Currently, it's just Vex, but I image I'll also add some HDAs in the future...
+
+Installation
+------------
+
 1. Clone this repo
 2. Include into your Vex path:
 

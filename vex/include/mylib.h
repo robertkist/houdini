@@ -35,6 +35,10 @@ int curve_peak(float a; float b; float c) {
     return a < b && c < b;
 }
 
+int curve_valley(float a; float b; float c) {
+    return a > b && c > b;
+}
+
 // Calculates and returns normal vector for a given point on a curve.
 // Inputs are the point number (@ptnum) and the point (@P).
 // The return value can be assigned to @N.
